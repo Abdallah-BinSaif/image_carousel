@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carousel</title>
+    <link rel="stylesheet" href="./output.css"/>
 </head>
 <body>
-    <h1>hello</h1>
+    <header>
+        <img id="image" src="./assets/playingRabbit.png" alt="Image of Rabbit" class="w-full md:h-[80vh] mb-2"/>
+    </header>
+    <!-- navigator -->
+    <section>
+        <div class="flex justify-center gap-3">
+            <button id="previous" class="border p-2">Previous</button>
+            <button id="next" class="border p-2">Next</button>
+        </div>
+    </section>
+<!-- 
+Further Enhancements
+Error Handling: What if the image paths are wrong? While not critical for a simple local setup, in a more complex application, you might want to handle cases where images fail to load.
+
+Loading State/Placeholders: For larger images or slower connections, you might want to show a loading spinner or a placeholder image until the actual image is loaded.
+
+Automatic Play: You could add functionality to automatically advance the carousel after a certain time interval.
+
+Dots/Indicators: For a better user experience, you could add clickable dots below the image to directly navigate to a specific image.
+
+Accessibility Improvements: While you have alt text, consider adding aria-live regions for screen readers if the image content changes frequently or automatically.
+ -->
+
+    <script src="./index.js"></script>
 </body>
 </html>
